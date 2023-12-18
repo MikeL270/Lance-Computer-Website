@@ -1,5 +1,11 @@
 body {
-    background-color: #000000;
+    background-image: url(../images/site-background.webp);
+    height: 100vh;
+    background-color: white ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     font-size: 14pt;
 }
 
@@ -10,46 +16,50 @@ header {
     top:0;
     left:0;
     right:0;
+    border-bottom: 1px solid rgb(30, 63, 197);
 }
 
     #logo {
         height: 80px;
         padding:11px 21px;
         float: left;
+        margin-left: 10%;
     }
 
     header nav {
-        float: left;
-        margin-top: 60px;
+        float: right;
+        margin-top: 30px;
+        margin-right: 10%;
         height: 40px;
         line-height: 40px;
         font-size: 24px;
+        overflow: hidden;
     }
 
     header nav a{
         padding:0 15px;
         text-decoration: none;
         color: white;
+        text-align: center;
+
     }
     header nav a:hover {
         color: rgb(30, 63, 197);
         background-color: rgba(0,0,0,0.4);
     }
 
-    main {
-        padding-top: 100px;
-        padding-bottom: 20px;
-    }
+main {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
 
-    .finisher {
-        background-image: url(../images/marshinator.jpeg);
-        height: 3440px;
-        width: 1440x;
-        background-color: white ;
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
+h1 {
+    position: fixed;
+    top: 110px;
+    right: 50%;
+    left: 50%;
+    color: white;
+}
 
 footer {
     background-color: black;
@@ -57,9 +67,9 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     color: white;
     font-size: 80%;
-    border-top: 1px solid orange;
+    border-top: 1px solid rgb(30, 63, 197);
 }
