@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Client Portal</title>
+    <title>Lance Computer - Client Portal</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="css/ClientPortal.css" />
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
+    <link href="https://fonts.cdnfonts.com/css/liberation-serif" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+    $(function(){
+        $('a').each(function(){
+            if ($(this).prop('href') == window.location.href) {
+                $(this).addClass('active'); $(this).parents('li').addClass('active');
+            }
+        });
+    });
+</script>
 </head>
 <body>
     <header>
-        <img src="images/logo-header.webp" alt="Lance Computer Logo & Title" id="logo"/>
+        <img src="images/tp-light-logo.webp" alt="Lance Computer Logo & Title" id="logo"/>
         <nav>
             <a href="index.htm" title="home">Home</a>
             <a href="Services.htm" title="services">Services</a>
@@ -17,7 +30,9 @@
         </nav>
     </header>
     <main>
-        <div class="finisher"></div>
+        <iframe src="https://invoices.lancecomputer.com/client/login" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="800px" width="1200px" allowfullscreen=""> 
+            <div style="text-align: center">
+            </div> </iframe>
     </main>
-    <footer>&copy; 2024 | Lance Computer LLC all rights reserved</p> </footer>
+    <footer>&copy; <script>document.write(new Date().getFullYear())</script> | Lance Computer LLC all rights reserved</p> </footer>
 </body>
