@@ -14,5 +14,19 @@
     text-shadow: 0 0 3px #002263;
     font-weight: bold;
     font-family: 'Liberation Serif', sans-serif;
-    padding-bottom: 1%;
 }
+.home-buttons {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Liberation Serif', sans-serif;
+}
+    .home-buttons a {
+        text-decoration: none;
+        overflow:hidden;
+        color:black;
+    }
+    .home-buttons a:hover {
+        color: #002263;
+        text-shadow: 0 0 1px white;
+        background-color: white;
+    }
