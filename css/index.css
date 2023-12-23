@@ -15,18 +15,28 @@
     font-weight: bold;
     font-family: 'Liberation Serif', sans-serif;
 }
+
 .home-buttons {
     text-align: center;
-    font-weight: bolder;
-    font-family: 'Liberation Serif', sans-serif;
+    text-decoration: none;
+
 }
     .home-buttons a {
+        text-align: center;
         text-decoration: none;
-        overflow:hidden;
         color:black;
     }
     .home-buttons a:hover {
-        color: #002263;
-        text-shadow: 0 0 1px white;
-        background-color: white;
+        text-align: center;
+        color: white;
     }
+.button {
+    background-color: white;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-color: #002263;
+    border-radius: 4px;
+}
+.button:hover {
+    background-color: #002263;
+}
