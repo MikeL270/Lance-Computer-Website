@@ -1,33 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Lance Computer - Services</title>
-    <link rel="stylesheet" type="text/css" href="css/screen.css" />
-    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
-    <link href="https://fonts.cdnfonts.com/css/liberation-serif" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script>
-    $(function(){
-        $('a').each(function(){
-            if ($(this).prop('href') == window.location.href) {
-                $(this).addClass('active'); $(this).parents('li').addClass('active');
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
+        <title>Lance Computer - Home</title>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+       $(function(){
+        $('nav a').each(function(){
+            var href = new URL($(this).prop('href'), window.location.origin).pathname;
+            var location = window.location.pathname;
+    
+            if (href === location) {
+                $(this).addClass('active');
+                $(this).parents('li').addClass('active');
             }
         });
     });
-</script>
-</head>
+    </script>
+    </head>
 <body>
     <header>
-        <a href="index.htm" title="home">
-            <img src="images/bigger-logo-light.webp" alt="Lance Computer Logo & Title" id="logo"/>
-        </a>
         <nav>
-            <ul>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#FFFFFF" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li> <a href="index.htm" title="home">Home</a></li>
                 <li> <a href="Services.htm" title="services">Services</a></li>
                 <li> <a href="ClientPortal.htm" title="client-portal">Client Portal</a></li>
+                <li> <a href="About.htm" title="about">About</a></li>
+            </ul>
+            <ul>
+                <li>><a href="index.htm" title="home" class="logo">
+                    <img src="images/bigger-logo-light.webp" alt="Lance Computer Logo & Title" class="logo"/>
+                </a>
+                </li>
+                <li class="HideOnMobie"> <a href="index.htm" title="home">Home</a></li>
+                <li class="HideOnMobie"> <a href="Services.htm" title="services">Services</a></li>
+                <li class="HideOnMobie"> <a href="ClientPortal.htm" title="client-portal">Client Portal</a></li>
+                <li class="HideOnMobie"> <a href="About.htm" title="about">About</a></li>
+                <li  class="menu-button" onclick=showSidebar() class="hide-on-desktop"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#FFFFFF" d="M130-248v-75h700v75H130Zm0-195v-75h700v75H130Zm0-195v-75h700v75H130Z"/></svg></a></li>
             </ul>
         </nav>
+
+        <script>
+            function showSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hideSidebar(){
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
     </header>
     <main>
         <div class="finisher"></div>

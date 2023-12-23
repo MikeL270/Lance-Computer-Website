@@ -1,0 +1,209 @@
+@import url(https://fonts.cdnfonts.com/css/liberation-serif);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('../images/site-background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Liberation Serif', sans-serif;
+    overflow: hidden;
+}
+header {
+    background-color: #121212;
+    height: 65px;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    border-bottom: 1px solid #002263;
+    overflow: hidden;
+}
+    nav {
+        background-color: #121212;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .logo {
+        height: 65px;
+        float: left;
+    }
+
+    nav ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav li {
+        height: 65px;
+    }
+
+    nav a {
+        height: 100%;
+        padding: 0 15px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+
+    nav a:hover {
+        color: #002263;
+        text-shadow: 0 0 1px white;
+    }
+    
+    nav a.active {
+        color: #002263;
+        text-shadow: 0 0 1px white;
+    }    
+    
+    nav li:first-child {
+        margin-right: auto;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        z-index: 999;
+        background-color: #12121286;
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .sidebar li {
+        width: 100%;
+    }
+
+    .sidebar a {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    @media(max-width: 600px){
+        .HideOnMobie {
+            display: none;
+        }
+
+        .menu-button {
+            display: block;
+        }
+    }
+    @media (max-width:500px) {
+        .sidebar {
+            width: 100%
+        }
+        
+    }
+
+    main {
+        padding-top: 100px;
+        padding-bottom: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+        /* proceeding are css elements for text and commonly used objects sitewide */
+        .box {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-color: #002263;
+            border-radius: 4px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row; 
+            align-items: center;
+        }
+
+        .full-width {
+            width: 100%; 
+            margin-bottom: 20px;
+        }
+
+        .half-width {
+            flex: 1;
+            width: calc(50% - 20px); 
+            margin-right: 20px;
+        }
+
+        .third-width {
+            flex: 1;
+            width: calc(33% -20px);
+            margin-right: 20px;
+        }
+
+        .box-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; 
+        }
+
+        .center-horiz {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+          }
+
+        .center-vertical {
+            padding: 12% 0;
+        }
+
+        hr {
+            height: 2px;
+            background-color: white;  
+            margin: auto;
+            width: 75%;
+            text-shadow: 0 0 2px white;
+        }
+
+        p {
+            text-align: center;
+            font-family: 'Liberation Serif', sans-serif;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #002263;
+            color: white;
+        }
+        
+footer {
+    background-color: #121212;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: 80%;
+    font-family: 'Liberation Serif', sans-serif;
+    border-top: 1px solid #002263;
+}
