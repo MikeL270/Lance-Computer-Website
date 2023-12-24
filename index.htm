@@ -27,7 +27,10 @@
     <header>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#FFFFFF" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideSidebar()> <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path fill="#FFFFFF" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224
+                         224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li> <a href="index.htm" title="home">Home</a></li>
                 <li> <a href="Services.htm" title="services">Services</a></li>
                 <li> <a href="ClientPortal.htm" title="client-portal">Client Portal</a></li>
@@ -42,7 +45,10 @@
                 <li class="HideOnMobie"> <a href="Services.htm" title="services">Services</a></li>
                 <li class="HideOnMobie"> <a href="ClientPortal.htm" title="client-portal">Client Portal</a></li>
                 <li class="HideOnMobie"> <a href="About.htm" title="about">About</a></li>
-                <li  class="menu-button" onclick=showSidebar() class="hide-on-desktop"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path fill="#FFFFFF" d="M130-248v-75h700v75H130Zm0-195v-75h700v75H130Zm0-195v-75h700v75H130Z"/></svg></a></li>
+                <li  class="HideOnDesktop" onclick=showSidebar() class="hide-on-desktop"><a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                        <path fill="#FFFFFF" d="M130-248v-75h700v75H130Zm0-195v-75h700v75H130Zm0-195v-75h700v75H130Z"/>
+                    </svg></a></li>
             </ul>
         </nav>
 
@@ -63,16 +69,27 @@
             <h2 class="sub-heading">• Repair • Networking • Web Development • Soldering • Consulting •</h2>
         </div>
         <hr />
-        <div class="container center-vertical center-horiz">
-            <button onclick="window.location.href='Services.htm';" class="box third-width">
+        <div class="container center-vertical center-horiz button-container">
+            <button onclick="window.location.href='Services.htm';" class="box third-width HideOnMobie">
                Services
             </button>
-            <button onclick="window.location.href='ClientPortal.htm';" class="box third-width">
-                <p class="button-text">Client Portal</p>
+            <button onclick="window.location.href='ClientPortal.htm';" class="box third-width HideOnMobie">
+                Client Portal
              </button>
-             <button onclick="window.location.href='About.htm';" class="box third-width">
-                <p class="button-text">About</p>
+             <button onclick="window.location.href='About.htm';" class="box third-width HideOnMobie">
+                About
              </button>
+        </div>
+        <div class="container center-horiz center-horiz ">
+            <button onclick="window.location.href='Services.htm';" class="box full-width HideOnDesktop">
+                Services
+             </button>
+             <button onclick="window.location.href='ClientPortal.htm';" class="box full-width HideOnDesktop">
+                 Client Portal
+              </button>
+              <button onclick="window.location.href='About.htm';" class="box full-width HideOnDesktop">
+                 About
+              </button>
         </div>
     </main>
     <footer>&copy; <script>document.write(new Date().getFullYear())</script> | Lance Computer LLC all rights reserved</p> </footer>

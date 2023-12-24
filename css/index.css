@@ -5,6 +5,7 @@
     font-weight: bold;
     font-family: 'Liberation Serif', sans-serif;
     text-shadow: 0 0 3px #002263;
+    min-width: 369px;
 }
 
 .sub-heading {
@@ -14,4 +15,10 @@
     text-shadow: 0 0 3px #002263;
     font-weight: bold;
     font-family: 'Liberation Serif', sans-serif;
+}
+
+.button-container {
+    width: 100%;
+    height: 50%;
+    min-width: 282px;
 }

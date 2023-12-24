@@ -5,4 +5,10 @@ iframe {
     justify-content: center;
     display: block;
     text-align: center;
+    height: 800px; 
+    width: 1200px;
+    resize: both;
+    overflow: auto;
+    max-height: inherit;
+
 }

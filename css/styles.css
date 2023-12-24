@@ -6,12 +6,15 @@
 
 body {
     min-height: 100vh;
+    min-width: 300px;
     background-image: url('../images/site-background.webp');
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Liberation Serif', sans-serif;
     overflow: hidden;
+    background-position: center;
 }
+
 header {
     background-color: #121212;
     height: 65px;
@@ -21,6 +24,7 @@ header {
     right:0;
     border-bottom: 1px solid #002263;
     overflow: hidden;
+
 }
     nav {
         background-color: #121212;
@@ -94,7 +98,7 @@ header {
         padding: 0 30px;
     }
 
-    .menu-button {
+    .HideOnDesktop {
         display: none;
     }
 
@@ -103,15 +107,15 @@ header {
             display: none;
         }
 
-        .menu-button {
+        .HideOnDesktop {
             display: block;
         }
-    }
     @media (max-width:500px) {
         .sidebar {
             width: 100%
         }
-        
+
+    }
     }
 
     main {
@@ -187,11 +191,14 @@ header {
         button {
             background-color: white;
             border: none;
+            white-space: initial;
+            min-width: 149px;
         }
 
         button:hover {
             background-color: #002263;
             color: white;
+            cursor:pointer;
         }
         
 footer {
