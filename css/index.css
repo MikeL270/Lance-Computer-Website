@@ -1,19 +1,15 @@
 .desktop-home-button-container {
-    width: 100%;
+    width: auto;
     height: auto;
     min-width: 282px;
     align-self: center;
     margin: auto;
 }
 
-.mobile-home-button-container {
-    margin: auto;
-    padding-top: 20%;
-}
-
 .home-buttons {
     height: auto;
     font-size: 18px;
     font-weight: bold;
+    width: 30vh;
 }
 

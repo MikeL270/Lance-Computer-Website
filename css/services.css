@@ -1,33 +1,46 @@
 .services-button-container {
-    width: 100%;
+    width: auto;
     height: auto;
     align-self: center;
     margin: auto;
 }
 
 .toggle-button {
+    width: 30vh;
     height: auto;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
-    width: 100%;
-    margin:auto;
+   
 }
 
 .FullScreenDiv {
-    margin: auto;
-    width: 100%;
-    height: 60vh;
+    flex: 1;
     border-radius: 4px;
     background-color: #f0f0f0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 5vh;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
 }
+
+    .close-button {
+        align-self: flex-start;
+        flex: 1;
+        margin: 5px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        max-height: 5vh;
+    }
+
+    .FullScreenContent {
+
+    }
 
 .hidden {
     display: none;
-}
-
-.close-button {
-    position: absolute;
-
 }
