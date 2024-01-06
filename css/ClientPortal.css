@@ -1,14 +1,25 @@
-iframe {
-    border: 0px;
-    margin: 0 auto;
-    background-color: transparent;
+.portal-container {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    display: block;
-    text-align: center;
-    height: 800px; 
-    width: 1200px;
-    resize: both;
-    overflow: auto;
-    max-height: inherit;
-
+    flex-direction: column;
+    height: 70vh;
+    width: 80vw;
+    align-self: center;
+    margin: 3vh;
 }
+
+    iframe {
+        border: 0px;
+        margin: 0 auto;
+        background-color: transparent;
+        justify-content: center;
+        display: block;
+        text-align: center;
+        height: 65vh;
+        width: 75vw;
+        
+        overflow: auto;
+        
+
+    }

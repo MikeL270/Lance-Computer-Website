@@ -10,6 +10,11 @@
     height: auto;
     font-size: 18px;
     font-weight: bold;
-    width: 30vh;
+    width: 25vw;
 }
 
+@media(max-width: 702px){
+    .home-buttons {
+        width: 60vw;
+    }
+}
