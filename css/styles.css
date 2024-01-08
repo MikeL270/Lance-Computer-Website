@@ -171,9 +171,6 @@ body {
                 text-align: center;
                 font-family: 'Liberation Serif', sans-serif;
                 font-size: 18px;
-                color: white;
-                text-shadow: 0 0 3px #002263;
-                font-weight: bold;
                 font-family: 'Liberation Serif', sans-serif;
             }
 
@@ -182,6 +179,7 @@ body {
                 border: none;
                 white-space: initial;
                 min-width: 149px;
+                padding: 2px;
             }
 
             button:hover {
