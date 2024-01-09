@@ -10,7 +10,7 @@
     height: auto;
     font-size: 18px;
     font-weight: bold;
-   
+    opacity: 0.92;
 }
 
 .FullScreenDiv {
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 0 5vh;
+    margin: 11vh 0 5vh;
     flex-direction: column;
     align-items: center;
     overflow: auto;

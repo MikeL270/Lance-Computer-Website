@@ -1,9 +1,10 @@
 .desktop-home-button-container {
     width: auto;
     height: auto;
-    min-width: 282px;
     align-self: center;
     margin: auto;
+    align-content: center;
+    justify-content: center;
 }
 
 .home-buttons {
@@ -11,10 +12,12 @@
     font-size: 18px;
     font-weight: bold;
     width: 25vw;
+    opacity: 0.92;
 }
 
 @media(max-width: 702px){
     .home-buttons {
         width: 60vw;
+
     }
 }

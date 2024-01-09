@@ -10,17 +10,17 @@
         <title>Lance Computer - Home</title>
         <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script>
-    $(function(){
-        $('nav a').each(function(){
-            var href = new URL($(this).prop('href'), window.location.origin).pathname;
-            var location = window.location.pathname;
+            $(function(){
+                $('nav a').each(function(){
+                    var href = new URL($(this).prop('href'), window.location.origin).pathname;
+                    var location = window.location.pathname;
 
-            if (href === location) {
-                $(this).addClass('active');
-                $(this).parents('li').addClass('active');
-            }
-        });
-    });
+                    if (href === location) {
+                        $(this).addClass('active');
+                        $(this).parents('li').addClass('active');
+                    }
+                });
+            });
     </script>
     </head>
 <body>
@@ -70,17 +70,17 @@
         </div>
         <div class="container desktop-home-button-container">
             <button onclick="window.location.href='Services';" class="box home-buttons button-1">
-                <img src="icons/dark/services.svg"/>
+                <img src="icons/dark/services.svg" class="button-icon"/>
                 <br>
                 Services
             </button>
             <button onclick="window.location.href='ClientPortal';" class="box home-buttons button-2">
-                <img src="icons/dark/clientPortal.svg"/>
+                <img src="icons/dark/clientPortal.svg" class="button-icon"/>
                 <br>
                 Client Portal
              </button>
              <button onclick="window.location.href='About';" class="box home-buttons button-3">
-                <img src="icons/dark/about.svg"/>
+                <img src="icons/dark/about.svg" class="button-icon"/>
                 <br>
                 About
              </button>
