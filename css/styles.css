@@ -14,6 +14,7 @@ body {
     min-height: 88vh;
     background-attachment: fixed;
     margin:6vh 10vw 6vh;
+    z-index: -1;
     
 }
 
@@ -25,6 +26,7 @@ body {
         right:0;
         border-bottom: 1px solid #002263;
         overflow: hidden;
+        z-index: 2;
 
     }
         nav {
@@ -86,8 +88,10 @@ body {
             justify-content: flex-start;
             align-items: center;
             padding-top: 6vh;
+            z-index: 3;
+            
         }
-
+            
         .sidebar li {
             width: 100%;
             align-self: center;
@@ -114,6 +118,7 @@ body {
             flex-direction: column;
             overflow: none;
             width: 100%;
+            z-index: 1;
         }
             .pageTitle {
                 display: block;
@@ -217,6 +222,7 @@ body {
         font-size: 80%;
         font-family: 'Liberation Serif', sans-serif;
         border-top: 1px solid #002263;
+        z-index: 2;
     }
 
     @media(max-width: 702px){
