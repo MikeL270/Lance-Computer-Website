@@ -22,20 +22,21 @@
                 });
             });
     </script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
     </head>
 <body>
     <header>
         <nav>
             <ul class="sidebar">
                 <li onclick=hideSidebar()> <a href="#">
-                    <img src="icons/light/closeX.svg"/></a></li>
+                    <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon></li>
                 <li> <a href="index" title="home">Home</a></li>
                 <li> <a href="Services" title="services">Services</a></li>
                 <li> <a href="ClientPortal" title="client-portal">Client Portal</a></li>
                 <li> <a href="About" title="about">About</a></li>
             </ul>
             <ul>
-                <li><a href="/" title="home" class="logo">
+                <li class="logo-container"><a href="/" title="home" class="logo">
                     <img src="images/bigger-logo-light.webp" alt="Lance Computer Logo & Title" class="logo"/>
                     </a>
                 </li>
@@ -45,7 +46,7 @@
                 <li class="HideOnMobie"> <a href="About" title="about">About</a></li>
                 <li  class="HideOnDesktop" onclick=showSidebar()>
                     <a href="#">
-                    <img src="icons/light/menu.svg"/>
+                        <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>
                     </a>
                 </li>
             </ul>
@@ -70,17 +71,17 @@
         </div>
         <div class="container desktop-home-button-container">
             <button onclick="window.location.href='Services';" class="box home-buttons button-1">
-                <img src="icons/dark/services.svg" class="button-icon"/>
+                <iconify-icon icon="material-symbols:handshake-outline" width="18" height="18"></iconify-icon>
                 <br>
                 Services
             </button>
             <button onclick="window.location.href='ClientPortal';" class="box home-buttons button-2">
-                <img src="icons/dark/clientPortal.svg" class="button-icon"/>
+                <iconify-icon icon="material-symbols:captive-portal-rounded" width="18" height="18"></iconify-icon>
                 <br>
                 Client Portal
              </button>
              <button onclick="window.location.href='About';" class="box home-buttons button-3">
-                <img src="icons/dark/about.svg" class="button-icon"/>
+                <iconify-icon icon="material-symbols:info-rounded" width="18" height="18"></iconify-icon>
                 <br>
                 About
              </button>

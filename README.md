@@ -2,6 +2,10 @@
 
 Welcome to the GitHub repository for Lance Computer's public website. This repository contains the code for the upcoming replacement of our WordPress site. While the code is open source and publicly accessible, please be aware of the copyright and usage terms outlined below.
 
+## Iconify Transition
+
+This branch is for testing the use of iconify's API in order to lay the foundation for more advanced features such as dark mode and weather aware themes.
+
 ## Copyright and Usage
 
 - This website's code is open source and publicly available for viewing.
