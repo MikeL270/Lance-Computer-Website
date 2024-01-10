@@ -22,20 +22,25 @@
         });
     });
     </script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
     </head>
 <body>
     <header>
         <nav>
             <ul class="sidebar">
-                <li onclick=hideSidebar()> <a href="#">
-                    <img src="icons/light/closeX.svg"/></a></li>
+                <li onclick=hideSidebar()> 
+                    <a href="#">
+                    <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon>
+                    </a>
+                </li>
                 <li> <a href="index" title="home">Home</a></li>
                 <li> <a href="Services" title="services">Services</a></li>
                 <li> <a href="ClientPortal" title="client-portal">Client Portal</a></li>
                 <li> <a href="About" title="about">About</a></li>
             </ul>
             <ul>
-                <li><a href="/" title="home" class="logo">
+                <li class="logo-container"><a href="/" title="home" class="logo">
                     <img src="images/bigger-logo-light.webp" alt="Lance Computer Logo & Title" class="logo"/>
                     </a>
                 </li>
@@ -45,7 +50,7 @@
                 <li class="HideOnMobie"> <a href="About" title="about">About</a></li>
                 <li  class="HideOnDesktop" onclick=showSidebar()>
                     <a href="#">
-                    <img src="icons/light/menu.svg"/>
+                   <iconify-icon icon="material-symbols:menu-rounded"></iconify-icon>
                     </a>
                 </li>
             </ul>
@@ -69,39 +74,39 @@
         </div>
     <div class="container services-button-container" id="container">
         <button class="box toggle-button" id="button1" data-target="div1">
-            <img src="icons/dark/repair.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:home-repair-service-outline-rounded" width="36" height="36"></iconify-icon>
                 <br>
             Computer Repairs
         </button>
         <button class="box toggle-button" id="button2" data-target="div2">
-            <img src="icons/dark/upgrade.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:upgrade-rounded" width="36" height="36"></iconify-icon>
             <br>
             Computer Upgrades
         </button>
         <button class="box toggle-button" id="button3" data-target="div3">
-            <img src="icons/dark/itSolutions.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:lan-outline" width="36" height="36"></iconify-icon>
             <br>
             Business Solutions
         </button>
         <button class="box toggle-button" id="button4" data-target="div4">
-           <img src="icons/dark/webDev.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:web" width="36" height="36"></iconify-icon>
             <br>
             Web Development
         </button>
         <button class="box toggle-button" id="button5" data-target="div5">
-            <img src="icons/dark/computer.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:computer-outline" width="36" height="36"></iconify-icon>
             <br>
             Custom Built PCs
         </button>
         <button class="box toggle-button" id="button6" data-target="div6">
-            <img src="icons/dark/troubleshoot.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:troubleshoot" width="36" height="36"></iconify-icon>
             <br>
             IT Troubleshooting
         </button>
     </div>
     <div class="div1 FullScreenDiv hidden">
         <button class="box close-button toggle-back" data-target="div1"> 
-            <img src="icons/dark/closeX.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon>
             Back 
         </button>
         <div class="HiddenMenuContentContainer">
@@ -112,7 +117,7 @@
     </div>
     <div class="div2 FullScreenDiv hidden">
         <button class="box close-button toggle-back" data-target="div2"> 
-            <img src="icons/dark/closeX.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon>
             Back 
         </button>
         <div class="HiddenMenuContentContainer">
@@ -123,7 +128,7 @@
     </div>
     <div class="div3 FullScreenDiv hidden">
         <button class="box close-button toggle-back" data-target="div3"> 
-            <img src="icons/dark/closeX.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon>
             Back 
         </button>
         <div class="HiddenMenuContentContainer">
@@ -133,7 +138,7 @@
     </div>
     <div class="div4 FullScreenDiv hidden">
         <button class="box close-button toggle-back" data-target="div4"> 
-            <img src="icons/dark/closeX.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon>
             Back 
         </button>
         <div class="HiddenMenuContentContainer">
@@ -149,13 +154,13 @@
     </div>
     <div class="div5 FullScreenDiv hidden">
         <button class="box close-button toggle-back" data-target="div5"> 
-            <img src="icons/dark/closeX.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon>
             Back 
         </button>
         </div>
     <div class="div6 FullScreenDiv hidden">
         <button class="box close-button toggle-back" data-target="div6"> 
-            <img src="icons/dark/closeX.svg" class="button-icon"/>
+            <iconify-icon icon="material-symbols:close-rounded" width="18" height="18"></iconify-icon>
             Back 
         </button>
     </div>

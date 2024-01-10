@@ -3,6 +3,7 @@
     height: auto;
     align-self: center;
     margin: auto;
+    z-index: -1;
 }
 
 .toggle-button {
@@ -32,7 +33,7 @@
     .close-button {
         align-self: flex-start;
         width: 69vw;
-        padding: 5px;
+        padding: 10px;
         margin: 5px;
         align-items: center;
         display: flex;
