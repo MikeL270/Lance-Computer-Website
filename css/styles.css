@@ -250,11 +250,6 @@ body {
             display: block;
         }
 
-        nav a.active {
-            color: white;
-            justify-content: center;
-        }
-
     }
     @media (max-width:500px) {
         .sidebar {
